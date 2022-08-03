@@ -108,7 +108,7 @@ with bdg1:
     image3 = Image.open('Baleendah.png')
     st.image(image3, caption='Baleendah, Bandung')
 with bdg2:
-    image4 = Image.open(''Bojongsoang.png')
+    image4 = Image.open('Bojongsoang.png')
     st.image(image4, caption='Bojongsoang, Bandung')
 with bdg3:
     image5 = Image.open('DayeuhKolot.png')
