@@ -87,7 +87,7 @@ with plothujan2:
     st.pyplot(fig2)
     # Plot BULANAN END
 
-st.markdown('<div style= "text-align: justify;" >Apabila dilihat dari kasus banjir setiap tahun\
+st.markdown('<div style= "text-align: justify;" >Dilihat dari kasus banjir setiap tahun\
     dan rata-rata tingkat intensitas hujan, maka dapat dilihat bahwa secara umum banjir meningkat (antara 2010 dan 2020), namun\
     intensitas hujan menurun.</div>', unsafe_allow_html=True)
 st.markdown('### Lantas mengapa banjir masih kerap terjadi?')
