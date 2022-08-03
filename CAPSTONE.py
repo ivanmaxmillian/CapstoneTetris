@@ -14,7 +14,7 @@ st.title('Melihat Lebih Luas Banjir Indonesia')
 st.markdown('### Ivan Maxmillian Putra Pasaribu')
 st.markdown('---')
 
-image1 = Image.open('C:/Users/ivanm/Documents/DOCUMENTS/BELAJAR/TETRIS/Project/banjir.jpeg')
+image1 = Image.open('banjir.jpeg')
 st.image(image1, caption='Gambar bencana Banjir diambil dari atas (Courtesy : Kompas.com)')
 
 st.markdown('##### <div style= "text-align: justify;" > Intensitas hujan yang tinggi hanya faktor pendukung penyebab banjir Indonesia. Faktor utama ialah \
@@ -46,7 +46,7 @@ with plotbjr1:
     plt.yticks(size=16)
     st.pyplot(fig1)
 with plotbjr2:
-    image2 = Image.open('C:/Users/ivanm/Documents/DOCUMENTS/BELAJAR/TETRIS/Project/Penyebab Banjir.png')
+    image2 = Image.open('Penyebab Banjir.png')
     st.image(image2, width=350, caption='Keterangan Penyebab Banjir berdasarkan Data BNPB')
 
 st.markdown('<div style= "text-align: justify;" >Seberapa parahkah hujan Indonesia sehingga\
@@ -57,7 +57,7 @@ st.markdown('<div style= "text-align: justify;" >Seberapa parahkah hujan Indones
     seperti grafik dibawah ini.</div>', unsafe_allow_html=True)
 
 #Data Curah Hujan
-data = pd.read_csv("C:/Users/ivanm/Documents/DOCUMENTS/BELAJAR/TETRIS/SQL/datasets/pr_timeseries_monthly_cru_202208011058.csv")
+data = pd.read_csv("pr_timeseries_monthly_cru_202208011058.csv")
 av_col = data[data['annual']>2009]
 av_col = pd.Series.to_frame(av_col.mean(axis=0))
 av_col = av_col.reset_index()
@@ -105,13 +105,13 @@ st.markdown('<div style= "text-align: justify;" >Dari 288 kejadian bencana banji
 
 bdg1, bdg2, bdg3 = st.columns(3)
 with bdg1:
-    image3 = Image.open('C:/Users/ivanm/Documents/DOCUMENTS/BELAJAR/TETRIS/Project/Baleendah.png')
+    image3 = Image.open(''Baleendah.png')
     st.image(image3, caption='Baleendah, Bandung')
 with bdg2:
-    image4 = Image.open('C:/Users/ivanm/Documents/DOCUMENTS/BELAJAR/TETRIS/Project/Bojongsoang.png')
+    image4 = Image.open(''Bojongsoang.png')
     st.image(image4, caption='Bojongsoang, Bandung')
 with bdg3:
-    image5 = Image.open('C:/Users/ivanm/Documents/DOCUMENTS/BELAJAR/TETRIS/Project/DayeuhKolot.png')
+    image5 = Image.open('DayeuhKolot.png')
     st.image(image5, caption='DayeuhKolot, Bandung')
 
 st.write('<div style= "text-align: justify;" >Ketiga daerah tersebut memiliki kesamaan yang terlihat \
@@ -133,13 +133,13 @@ st.write('Daerah lainnya, misalkan [Kec. Ciomas](%s) (9 kejadian banjir tercatat
 
 bgr1, bgr2, bgr3 = st.columns(3)
 with bgr1:
-    image6 = Image.open('C:/Users/ivanm/Documents/DOCUMENTS/BELAJAR/TETRIS/Project/Cibinong.png')
+    image6 = Image.open('Cibinong.png')
     st.image(image6, caption='Cibinong, Bogor')
 with bgr2:
-    image7 = Image.open('C:/Users/ivanm/Documents/DOCUMENTS/BELAJAR/TETRIS/Project/Bojonggede.png')
+    image7 = Image.open('Bojonggede.png')
     st.image(image7, caption='Bojonggede, Bogor')
 with bgr3:
-    image8 = Image.open('C:/Users/ivanm/Documents/DOCUMENTS/BELAJAR/TETRIS/Project/Cisarua.png')
+    image8 = Image.open('Cisarua.png')
     st.image(image8, caption='Cisarua, Bogor')
 
 st.markdown('<div style= "text-align: justify;" >Mirip seperti Bandung,\
@@ -155,13 +155,13 @@ st.markdown('<div style= "text-align: justify;" >Meskipun ada 171 data bencana b
 
 clp1, clp2, clp3 = st.columns(3)
 with clp1:
-    image6 = Image.open('C:/Users/ivanm/Documents/DOCUMENTS/BELAJAR/TETRIS/Project/Wanareja.png')
+    image6 = Image.open('Wanareja.png')
     st.image(image6, caption='Wanareja, Cilacap')
 with clp2:
-    image7 = Image.open('C:/Users/ivanm/Documents/DOCUMENTS/BELAJAR/TETRIS/Project/Sidareja.png')
+    image7 = Image.open('Sidareja.png')
     st.image(image7, caption='Bojonggede, Cilacap')
 with clp3:
-    image8 = Image.open('C:/Users/ivanm/Documents/DOCUMENTS/BELAJAR/TETRIS/Project/Majenang.png')
+    image8 = Image.open('Majenang.png')
     st.image(image8, caption='Majenang, Cilacap')
 
 st.markdown('<div style= "text-align: justify;" >Beberapa sungai kecil pun dapat menyebabkan banjir\
