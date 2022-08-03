@@ -26,7 +26,8 @@ st.markdown('<div style= "text-align: justify;" >Banjir tidak pernah luput setia
     menjadi 1932 kasus pada 2021.\
     Lebih dari 6 juta rumah pernah terendam dan lebih dari 42 ribu orang tercatat \
     menjadi korban dari bencana banjir di seluruh Indonesia.\
-    Data BNPB menyebutkan penyebab banjir di Indonesia didominasi oleh \'intensitas hujan yang tinggi\'.</div>', unsafe_allow_html=True)
+    Pada bubble word dibawah, data BNPB menyebutkan penyebab banjir di Indonesia didominasi oleh \
+    \'intensitas hujan yang tinggi\'.</div>', unsafe_allow_html=True)
 
 #BANJIR pertahun
 banjir_perthn = pd.Series.to_frame(data_banjir['Kejadian'].groupby(data_banjir['Tanggal Kejadian'].dt.year).agg('count'))
@@ -53,7 +54,7 @@ st.markdown('<div style= "text-align: justify;" >Seberapa parahkah hujan Indones
     dapat menyebabkan banjir secara terus menerus? Berdasarkan data dari Climate Change Knowledge Portal\
     (CCKP), secara rata-rata, curah hujan Indonesia cukup tinggi mulai bulan November\
     hingga bulan Maret dengan nilai precipitation lebih dari 250mm tetapi masih dalam kategori normal. \
-    Namun, secara kasar selama 10 tahun terakhir, curah hujan di Indonesia terlihat menurun \
+    Namun, secara kasar apabila dibandingkan antara 2010 dan 2020, curah hujan di Indonesia terlihat menurun \
     seperti grafik dibawah ini.</div>', unsafe_allow_html=True)
 
 #Data Curah Hujan
@@ -87,7 +88,7 @@ with plothujan2:
     # Plot BULANAN END
 
 st.markdown('<div style= "text-align: justify;" >Apabila dilihat dari kasus banjir setiap tahun\
-    dan rata-rata tingkat intensitas hujan, maka dapat dilihat bahwa secara umum banjir meningkat, namun\
+    dan rata-rata tingkat intensitas hujan, maka dapat dilihat bahwa secara umum banjir meningkat (antara 2010 dan 2020), namun\
     intensitas hujan menurun.</div>', unsafe_allow_html=True)
 st.markdown('### Lantas mengapa banjir masih kerap terjadi?')
 st.markdown('---')
