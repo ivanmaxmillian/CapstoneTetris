@@ -105,7 +105,7 @@ st.markdown('<div style= "text-align: justify;" >Dari 288 kejadian bencana banji
 
 bdg1, bdg2, bdg3 = st.columns(3)
 with bdg1:
-    image3 = Image.open(''Baleendah.png')
+    image3 = Image.open('Baleendah.png')
     st.image(image3, caption='Baleendah, Bandung')
 with bdg2:
     image4 = Image.open(''Bojongsoang.png')
