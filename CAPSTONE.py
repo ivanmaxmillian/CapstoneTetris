@@ -1,13 +1,15 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
+import requests
 from PIL import Image
 
 # Dashboard setup
 st.set_page_config(layout="centered")
 # End of Dashboard setup
 
-data_banjir = pd.read_excel('C:/Users/ivanm/Documents/DOCUMENTS/BELAJAR/TETRIS/Project/Data Bencana.xlsx')
+data1 = requests.get('https://gitlab.com/ivanmaxmillian/CapstoneTetris/-/raw/main/Data%20Bencana.xlsx')
+data_banjir = pd.read_excel(data1.content)
 data_banjir['Penyebab'].fillna(data_banjir['Kronologi & Dokumentasi'], inplace=True)
 
 st.title('Melihat Lebih Luas Banjir Indonesia')
