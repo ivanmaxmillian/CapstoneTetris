@@ -7,7 +7,7 @@ from PIL import Image
 st.set_page_config(layout="centered")
 # End of Dashboard setup
 
-data_banjir = pd.read_excel('C:/Users/ivanm/Documents/DOCUMENTS/BELAJAR/TETRIS/Project/Data Bencana.xlsx')
+data_banjir = pd.read_excel('Data Bencana.xlsx')
 data_banjir['Penyebab'].fillna(data_banjir['Kronologi & Dokumentasi'], inplace=True)
 
 st.title('Melihat Lebih Luas Banjir Indonesia')
